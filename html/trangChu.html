@@ -26,28 +26,62 @@
 
     <div class="menu">
         <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Shop</a></li>
+            <li><a href="./trangChu.html">Home</a></li>
+            <li><a href="./cuaHang.html">Shop</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
     </div>
 
     <div class="icon">
-        <i class="fa-regular fa-user"></i>
+        <i id="user" class="fa-regular fa-user"></i>
         <i class="fa-solid fa-magnifying-glass"></i>
         <i class="fa-regular fa-heart"></i>
         <i class="fa-solid fa-cart-shopping"></i>
     </div>
    </header>
 
+
+   
+    <div id="modal" class="modal">
+
+        <div id="modal__overlay" class="modal__overlay"></div>
+           
+        <div class="modal__content">
+            <h3>Login</h3>
+            <form action="">
+                <h4>Username:</h4>
+                <input type="text" required>
+                <h4>Password:</h4>
+                <input type="text" required>
+                <button class="modal_btn1">Login</button>
+            </form>
+
+            <button class="modal__btnfb">
+                <img src="../img/icon/facebook-f.png" alt="">
+                Facebook
+            </button>
+
+            <button class="modal__btnG">
+                <img src="../img/icon/google.png" alt="">
+                Googel
+            </button>
+
+            <div class="close" id="close">
+                <img src="../img/icon/window-close.png" alt="">
+            </div>
+        </div>
+        
+        </div>
+    </div>
+
    <section class="banner">
         <div class="banner_bgimg">
             <img src="../img/banner/Rectangle 1.png" alt="" class="bgimg__image">
         </div>
-
+<!-- 
         <h2>Trang chủ</h2>
-        <h4>Home</h4>
+        <h4>Home</h4> -->
    </section>
 
 
@@ -366,6 +400,24 @@
         <p class="footer__end">2023 furino. All rights reverved</p>
 
    </footer>
+
+
+   <script>
+        var close = document.getElementById("close")
+        close.onclick = function () {
+            modal.style.display = "none"
+        }
+
+        var user = document.getElementById("user")
+        user.onclick = function() {
+            modal.style.display = "flex"
+        }
+
+        var modal__overlay = document.getElementById("modal__overlay")
+        modal__overlay.onclick = function () {
+            modal.style.display = "none"
+        }
+   </script>
 
    
 </body>

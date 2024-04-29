@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* begin header*/
+
+header {
+    width: 100%;
+    height: 100px;
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: space-between;
+}
+
+header .logo{
+display: flex;
+margin-left: 100px;
+}
+
+.logo .logo__img {
+    width: 50px;
+    height: 32px;
+}
+
+.logo__img .logo__image {
+    width: 100%;
+    height: 100%;
+    margin-top: 33px
+}
+
+.logo .logo__name h3 {
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 100px;
+    margin-left: 5px;
+}
+
+.menu ul {
+    display: flex;
+}
+
+.menu ul li{
+    list-style-type: none;
+    margin: 0 30px;
+}
+
+.menu li a {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 100px;
+}
+
+header .icon {
+margin-right: 100px;
+}
+
+.icon i {
+    width: 28px;
+    height: 28px;
+    line-height: 100px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+/* begin banner */
+
+.banner{
+    position: relative;
+    width: 100%;
+    height: 316px;
+}
+
+.banner_bgimg {
+    width: 100%;
+    height: 316px;
+}
+
+.banner_bgimg .bgimg__image {
+    width: 100%;
+    height: 100%;
+}
+
+/* begin main*/
+
+main {
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.main__left {
+    width: 40%;
+}
+
+.main__left h2 {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 36px;
+}
+
+.name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first__name, .last__name {
+    display: flex;
+    flex-direction: column;
+    width: 47%;
+}
+
+.company__name, .country, .street__address, .town__city,
+.province, .zip__code,.phone, .email__address {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 ;
+}
+
+label {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main__left input {
+    width: 100%;
+    height: 75px;
+    border: 1px solid #9F9F9F;
+    border-radius: 10px;
+    margin-top: 22px;
+    padding-left: 31px;
+}
+
+.main__left button {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 75px;
+    right: 27px;
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+} 
+
+.main__left button img {
+    width: 100%;
+}
+
+.province,.country {
+    position: relative;
+
+}
+
+input::placeholder {
+    font-size: 16px;
+    color: #9F9F9F;
+    margin-left: 22px;
+}
+
+/**/
+
+.main__right {
+width: 40%;
+}
+
+.right__box1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-bottom: 1px solid #D9D9D9;
+}
+
+.box1__left {
+    width: 32%;
+}
+
+.box1__right {
+
+}
+
+.right__box1 h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 22px;
+}
+
+.name__product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name__product, .subtotal, .total,
+.price, .last__price {
+    margin-bottom: 22px;
+    font-weight: 400;
+}
+
+.name__text {
+    font-weight: 400;
+    color: #9F9F9F;
+}
+
+.x,.sl {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.last__price {
+    color: #B88E2F;
+    font-size: 24px;
+    font-weight: 700;
+    margin-left: -52px;
+}
+/**/
+
+.right__box2 {
+    margin-top: 30px;
+}
+
+.box2__title {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.box2__title img {
+    width: 14px;
+    height: 14px;
+}
+
+.box2__title h5 {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 15px;
+    margin-left: 15px;
+}
+
+.box2__textcontent1 {
+    margin-bottom: 30px;
+    font-size: 16px;
+    font-weight: 300;
+    color: #9F9F9F;
+}
+
+.box2__click {
+
+}
+
+.click {
+    display: flex;
+    margin-bottom: 11px;
+}
+
+.click img {
+    width: 14px;
+    height: 14px;
+}
+
+.click h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 15px;
+    margin-left: 15px;
+    color: #9F9F9F;
+}
+
+.box2__textcontent2 {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.right__box2 button {
+    width: 60%;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 20%;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
+/* Begin footer*/
+footer {
+    margin-top: 120px;
+}
+
+.footer__top {
+    width: 100%;
+    height: 270px;
+    background-color: #FAF3EA;
+    display: flex;
+}
+
+.footer__topBox {
+    display: flex;
+    margin: 100px 26px;
+    width: 23%;
+}
+
+.footer__topBox:first-child {
+    margin-left: 53px;
+}
+
+.footer__topBox:last-child {
+    margin-left: -87px;
+}
+
+.topBox__img {
+    height: 100%;
+}
+
+.topBox__img img {
+    width: 60px;
+    height: 60px;
+}
+.topBox__text {
+    margin-left: 10px;
+}
+
+.topBox__text h5 {
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 38px;
+    color: #242424;
+}
+
+.topBox__text p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #898989;
+}
+
+/**/
+
+.footer__bottom {
+    margin: 48px 100px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #DCD9DF;
+}
+
+.footer__bottomContent {
+    display: flex;
+}
+
+.bottom__content1 {
+    margin: 0 120px 0 0;
+}
+
+.bottom__content1 h3 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 50px;
+}
+
+.bottom__content1 p,.bottom__content2 p,
+ .bottom__content3 p,.bottom__content4 p  {
+    color: #9F9F9F;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.bottom__content2, .bottom__content3 {
+    margin-right: 160px;
+}
+
+.bottom__content2 p, .bottom__content3 p,.bottom__content4 p {
+    margin-bottom: 30px;
+}
+
+.bottom__content2 h5, .bottom__content3 h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 40px;
+}
+
+.footer__span input {
+    border: 0;
+    border-bottom: 1px solid;
+    width: 200px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #9F9F9F;
+}
+
+.footer__span button {
+    border: 0;
+    border-bottom: 1px solid #9A9A9A;
+    background-color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.footer__end {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-left: 100px;
+    margin-bottom: 60px;
+}
